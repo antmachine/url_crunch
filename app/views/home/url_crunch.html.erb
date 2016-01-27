@@ -1,3 +1,9 @@
 <h1>Hello! Enter a URL to get it's shorter cousin for sharing.</h1>
-<%= form_for @url do |f| %>
-<% end %>
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <%= form_for @url do |f| %>
+      <%= f.label :orginal_url %>
+      <%= f.text_field :original_url %>
+    <% end %>
+  </div>
+</div>
