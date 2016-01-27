@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160127230757) do
+ActiveRecord::Schema.define(version: 20160127232017) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "url", force: :cascade do |t|
-    t.text "orginal_url"
+  create_table "urls", force: :cascade do |t|
+    t.text "original_url"
     t.text "crunched_url"
   end
 
