@@ -13,7 +13,13 @@
     <div class="bumper" style="margin-top:50px;">
     </div>
     <%= render partial: "shared/navbar" %>
+    <%= render partial: "shared/notification_modal" %>
     <%= yield %>
   </div>
 </body>
+<% if flash.present? %>
+  <script>
+    $('#notification-modal').modal('show')
+  </script>
+<% end %>
 </html>

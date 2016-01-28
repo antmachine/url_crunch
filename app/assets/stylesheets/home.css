@@ -6,3 +6,17 @@
   display: flex;
   justify-content: space-around;
 }
+
+#url-crunch-input-label {
+  font-size: 20px;
+}
+
+#url-crunch-input {
+  height: 40px;
+  width: 500px;
+  font-size: 30px;
+}
+
+#url-crunch-submit {
+  margin: 10px 10px 10px 10px;
+}
