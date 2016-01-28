@@ -76,10 +76,11 @@ test:
 # You can use this database configuration with:
 #
 #   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+#
 #
 production:
   <<: *default
   database: url_crunch_production
   username: url_crunch
   password: <%= ENV['URL_CRUNCH_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
