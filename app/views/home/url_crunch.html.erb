@@ -3,9 +3,9 @@
 <div class="row">
   <div class="col-sm-12 text-center">
     <%= form_for @url, url: url_crunch_path do |f| %>
-      <%= f.label :orginal_url, id: "url-crunch-input-label" %>
+      <%= f.label :original_url, id: "url-crunch-input-label" %>
       </br>
-      <%= f.url_field :original_url, id: "url-crunch-input" %>
+      <%= f.text_field :original_url, id: "url-crunch-input" %>
       </br>
       <%= f.submit "Crunch It", class: "btn btn-warning", id: "url-crunch-submit"%>
     <% end %>

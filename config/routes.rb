@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :urls, except: [:index, :create]
   get '/all-urls' => "home#url_index", as: :url_index
   post '/url-cruncher' => "home#crunch_it", as: :url_crunch
+  get '/url-redirector' => "home#redirector", as: :url_redirecting
 end

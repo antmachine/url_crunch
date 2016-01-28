@@ -20,3 +20,14 @@
 #url-crunch-submit {
   margin: 10px 10px 10px 10px;
 }
+
+#url-index-table-wrapper {
+  margin: auto;
+  margin-top: 150px;
+  height: 1000px;
+  width: 700px;
+}
+
+#url-index-table {
+  margin: auto;
+}

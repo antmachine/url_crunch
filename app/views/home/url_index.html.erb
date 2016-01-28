@@ -1,4 +1,18 @@
-<% @urls.each do |url| %>
-  <%= url.original_url %>
-  <%= url.crunched_url %>
-<% end %>
+<div id="url-index-table-wrapper">
+  <table class="table" id="url-index-table">
+    <thead class="thead">
+      <tr>
+        <th>Original Url</th>
+        <th>Crunched Url</th>
+      </tr>
+    </thead>
+      <tbody>
+        <% @urls.each do |url| %>
+          <tr>
+            <td><%= link_to "#{url.original_url}", "http://#{url.original_url}", target: "_blank" %></td>
+            <td><%= link_to "#{url.crunched_url}", url_redirecting_path(url.id), target: "_blank" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+  </table>
+</div>
