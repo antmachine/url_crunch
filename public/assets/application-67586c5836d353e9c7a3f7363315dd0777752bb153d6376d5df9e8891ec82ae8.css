@@ -1,10 +1,11 @@
-#main-wrapper {
-
-}
-
 #main-nav {
   display: flex;
   justify-content: space-around;
+}
+
+#cruncher-wrapper {
+  margin: auto;
+  margin-top: 150px;
 }
 
 #url-crunch-input-label {
