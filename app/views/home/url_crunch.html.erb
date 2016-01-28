@@ -1,13 +1,15 @@
-<h3 class="text-center">Hello! Enter a URL to get it's shorter cousin for sharing.</h3>
-</br>
-<div class="row">
-  <div class="col-sm-12 text-center">
-    <%= form_for @url, url: url_crunch_path do |f| %>
-      <%= f.label :original_url, id: "url-crunch-input-label" %>
-      </br>
-      <%= f.text_field :original_url, id: "url-crunch-input" %>
-      </br>
-      <%= f.submit "Crunch It", class: "btn btn-warning", id: "url-crunch-submit"%>
-    <% end %>
+<div id="cruncher-wrapper">
+  <h3 class="text-center">Hello! Enter a URL to get it's shorter cousin for sharing.</h3>
+  </br>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <%= form_for @url, url: url_crunch_path do |f| %>
+        <%= f.label :original_url, id: "url-crunch-input-label" %>
+        </br>
+        <%= f.text_field :original_url, id: "url-crunch-input" %>
+        </br>
+        <%= f.submit "Crunch It", class: "btn btn-warning", id: "url-crunch-submit"%>
+      <% end %>
+    </div>
   </div>
 </div>

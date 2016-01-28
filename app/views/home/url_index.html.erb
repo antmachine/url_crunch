@@ -10,7 +10,7 @@
         <% @urls.each do |url| %>
           <tr>
             <td><%= link_to "#{url.original_url}", "http://#{url.original_url}", target: "_blank" %></td>
-            <td><%= link_to "#{url.crunched_url}", url_redirecting_path(url.id), target: "_blank" %></td>
+            <td><%= link_to "#{ENV['BASE_URL'] + url.crunched_url}", url_redirecting_path(url.id), target: "_blank" %></td>
           </tr>
         <% end %>
       </tbody>

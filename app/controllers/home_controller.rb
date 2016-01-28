@@ -21,6 +21,10 @@ class HomeController < ApplicationController
     redirect_to "http://#{url.original_url}"
   end
 
+  def incoming_link
+    url = Url.where(:crunched_url => params[:shorty_url])[0]
+    redirect_to "http://#{url.original_url}"
+  end
 
   private
   def url_crunch_params
