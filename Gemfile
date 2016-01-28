@@ -39,6 +39,4 @@ end
 group :production do
   # heroku plugins
   gem 'rails_12factor'
-  # timeout for server requests
-  gem 'rack-timeout'
 end
